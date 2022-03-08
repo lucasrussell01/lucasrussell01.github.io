@@ -8,14 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-About me
-=====
+
 
 This is a personal academic website for Lucas Russell under development. More stuff about me etc
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* MSci Physics, Imperial College London, United Kingdom (2019-2023)
+* Exchange Year, Ecole Polytechnique Federale de Lausanne, Switzerland (2021-2022)
+* French Baccalaureate, Lycee Francais Charles de Gaulle, United Kingdom (2012-2019)
 
