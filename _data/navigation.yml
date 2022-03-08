@@ -1,19 +1,17 @@
 # main links links
 main:
-  - title: "Year 2 Labs"
+  - title: "MSci Project"
+    url: /msci/
+  
+  - title: "JET Project"
+    url: /jet/
+
+  - title: "CV"
+    url: /cv/
+
+  - title: "Laboratories"
     url: /laboratories/
-
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
     
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
