@@ -9,8 +9,11 @@ redirect_from:
   - /about.html
 ---
 
-This is a personal academic website for Lucas Russell under development
+
 ======
-<h1>My First Heading</h1>
+
+This is a personal academic website for Lucas Russell under development. More stuff about me etc
+
+<h1>Education</h1>
 
 About me
