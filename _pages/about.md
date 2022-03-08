@@ -12,7 +12,7 @@ redirect_from:
 
 This website is under development.
 
-I am a third year MSci Physics student at Imperial College London, with a particular interest in High Energy Physics. This website includes examples of some of my previous work, including 2nd Year Laboratory Reports, a plasma physics project on the Joint European Torus (JET), and my MSci project at the Compact Muon Solenoid (CMS) experiment at CERN.
+I am a third year MSci Physics student at [Imperial College London](https://www.imperial.ac.uk/ "ICL"), with a particular interest in High Energy Physics. This website includes examples of some of my previous work, including 2nd Year Laboratory Reports, a plasma physics project on the [Joint European Torus](https://www.euro-fusion.org/devices/jet/ "JET") (JET), and my MSci project at the [Compact Muon Solenoid](https://home.cern/science/experiments/cms "CMS") (CMS) experiment at CERN.
 
 
 Education
