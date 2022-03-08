@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "About me"
-
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -9,11 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-
-======
+About me
+=====
 
 This is a personal academic website for Lucas Russell under development. More stuff about me etc
 
-<h1>Education</h1>
+Education
+======
+* B.S. in GitHub, GitHub University, 2012
+* M.S. in Jekyll, GitHub University, 2014
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 
-About me
