@@ -10,7 +10,10 @@ redirect_from:
 
 
 
-This is a personal academic website for Lucas Russell under development. More stuff about me etc
+This website is under development.
+
+I am a third year MSci Physics student at Imperial College London, with a particular interest in High Energy Physics. This website includes examples of some of my previous work, including 2nd Year Laboratory Reports, a plasma physics project on the Joint European Torus (JET), and my MSci project at the Compact Muon Solenoid (CMS) experiment at CERN.
+
 
 Education
 ======
