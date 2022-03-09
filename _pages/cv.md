@@ -9,6 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Comming Soon
+Coming Soon
 ======
 Coming Soon
