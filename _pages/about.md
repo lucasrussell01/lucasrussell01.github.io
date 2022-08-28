@@ -12,14 +12,14 @@ redirect_from:
 
 This website is under development.
 
-I am a third year MSci Physics student at [Imperial College London](https://www.imperial.ac.uk/ "ICL"), with a particular interest in High Energy Physics. This website includes examples of some of my previous work, including 2nd Year Laboratory Reports, a plasma physics project on the [Joint European Torus](https://www.euro-fusion.org/devices/jet/ "JET") (JET), and my MSci project at the [Compact Muon Solenoid](https://cms.cern/ "CMS") (CMS) experiment at CERN.
+I am a third year MSci Physics student at [Imperial College London](https://www.imperial.ac.uk/ "ICL"), with a particular interest in High Energy Physics. This website includes examples of some of my previous work on the [Compact Muon Solenoid](https://cms.cern/ "CMS") (CMS) experiment at CERN, which I worked on for my MSci project on hadronic tau identification, and summer project on neutral pion reconstruction for a study of the CP nature of the Higgs boson. I have also included a summary of a plasma physics project on the [Joint European Torus](https://www.euro-fusion.org/devices/jet/ "JET") (JET).
 
 
 Education
 ======
 * MSci Physics, Imperial College London, United Kingdom (2019-2023)
   * On track for a First Class
-  * Masters Project:  Implementation of Adversarial Machine Learning Techniques to Improve Identification of Hadronic Tau Lepton Decays at CMS
+  * Masters Project:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS
   * Courses in Particle Physics, Quantum Physics, Electromagnetism, Thermodynamics, Practical Physics and Mathematics
 * Exchange Year, Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland (2021-2022)
   * Working on Masters Project in the High Energy Physics Laboratory (LPHE-LS)
