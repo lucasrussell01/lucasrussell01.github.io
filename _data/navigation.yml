@@ -1,13 +1,13 @@
 # main links links
 main:
-  - title: "MSci Project"
-    url: /msci/
+  - title: "DeepTau"
+    url: /DeepTau/
   
+  - title: "Higgs CP Analysis"
+    url: /Higgs_CP/
+
   - title: "JET Project"
     url: /jet/
-
-  - title: "Laboratories"
-    url: /laboratories/
     
   - title: "CV"
     url: /cv/
