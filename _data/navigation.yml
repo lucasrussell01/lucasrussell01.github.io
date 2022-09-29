@@ -1,13 +1,13 @@
 # main links links
 main:
-  - title: "DeepTau"
+  - title: "Master's Project"
     url: /DeepTau/
   
-  - title: "Higgs CP Analysis"
-    url: /Higgs_CP/
+  # - title: "DeepPi0"
+  #   url: /DeepPi0/
 
-  - title: "JET Project"
-    url: /jet/
+  # - title: "JET Project"
+  #   url: /jet/
     
   - title: "CV"
     url: /cv/

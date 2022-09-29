@@ -11,4 +11,5 @@ redirect_from:
 
 Coming Soon
 ======
-Coming Soon
+
+You will be able to view my CV on this page in the near future.
