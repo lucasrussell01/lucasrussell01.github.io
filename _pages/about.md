@@ -10,7 +10,6 @@ redirect_from:
 
 
 
-This website is under development.
 
 I am a final year MSci Physics student at [Imperial College London](https://www.imperial.ac.uk/ "ICL"), looking to continue my studies with a PhD in High Energy Physics. 
 
@@ -18,13 +17,12 @@ My master's thesis on the identification of hadronic tau lepton decays with doma
 
 Here, you can find links to my [GitHub](https://github.com/lucasrussell01 "github") account (with code from several past projects) and my [LinkedIn](https://www.linkedin.com/in/lucasrussell01/ "linkedin") here, as well as my [email](mailto:lucas.russell19@imperial.ac.uk "mail") address if you'd like to get in touch. 
 
-In the future, this website will include descriptions of some of my previous work on the [Compact Muon Solenoid](https://cms.cern/ "CMS") (CMS) experiment at CERN, which I worked on during my MSci project on hadronic tau identification, and during a summer project on neutral pion reconstruction for a study of the CP nature of the Higgs boson. I will also include a summary of a previous plasma physics project on the [Joint European Torus](https://www.euro-fusion.org/devices/jet/ "JET") (JET).
-
+In the future, this website will include descriptions of some of my work on the [Compact Muon Solenoid](https://cms.cern/ "CMS") (CMS) experiment at CERN,
+primarily focused studies of the Higgs boson decaying into tau leptons and tau identification/reconstruction. 
 
 Education
 ======
 * Imperial College London, MSci Physics with a Year Abroad (2019-2023)
-  * On track for first class honours.
   * MSci Project:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS.
   * Year abroad at Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland (2021-2022). Courses included particle, accelerator and computational physics.
   * Final year modules include: Advanced Particle Physics, Quantum Field Theory, Unification.
