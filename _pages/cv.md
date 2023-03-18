@@ -9,7 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-Coming Soon
 ======
 
-You will be able to view my CV on this page in the near future.
+You will be able to view my CV on this page in the near future. In the meantime, please contact me via [email](mailto:lucas.russell19@imperial.ac.uk "mail"). 
