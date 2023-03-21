@@ -86,7 +86,7 @@ author:
   location         : "London"
   employer         :
   pubmed           : 
-  googlescholar    :  "DCdjsvAAAAAJ&hl" 
+  googlescholar    :  "https://scholar.google.com/citations?user=DCdjsvAAAAAJ&hl=en" 
   email            : "lucas.russell19@imperial.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :  "lucasrussell01"
-  orcid            :  "0000-0002-6502-2185" 
+  orcid            :  "https://orcid.org/0000-0002-6502-2185" 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
