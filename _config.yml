@@ -86,7 +86,7 @@ author:
   location         : "London"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    :  "https://scholar.google.com/citations?user=DCdjsvAAAAAJ&hl=en" 
   email            : "lucas.russell19@imperial.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
