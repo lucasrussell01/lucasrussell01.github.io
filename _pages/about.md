@@ -23,7 +23,7 @@ Here, you can find links to my [GitHub](https://github.com/lucasrussell01 "githu
 if you'd like to get in touch. 
 
 In the future, this website will include descriptions of some of my work on the [Compact Muon Solenoid](https://cms.cern/ "CMS") (CMS) experiment at CERN,
-primarily focused studies of the Higgs boson decaying into tau leptons and tau identification/reconstruction. 
+primarily focused on studies of the Higgs boson decaying into tau leptons and tau identification/reconstruction. 
 
 Education
 ======
