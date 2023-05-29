@@ -12,7 +12,7 @@ redirect_from:
 
 
 I am a final year MSci Physics student at [Imperial College London](https://www.imperial.ac.uk/ "ICL"),
-passionate about High Energy Phsics and the application of Machine Learning techniques at the energy frontier, 
+passionate about High Energy Physics and the application of Machine Learning techniques at the energy frontier, 
  intending to continue my studies with a PhD in the area from October 2023. 
 
 My master's thesis on the identification of hadronic tau lepton decays with domain adaptation using adversarial machine learning techniques at CMS is available online:
