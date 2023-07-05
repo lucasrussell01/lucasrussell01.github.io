@@ -34,4 +34,4 @@ Education
 
 * Lyc&eacute;e Francais Charles de Gaulle, French Baccalaureate (2012-2019)
   * Scientific stream, specialisation in Mathematics, Highest honors (Mention Tr&egrave;s Bien).
-  * Overal grade of 20.11/20 (exceeding maximum grade through optional subjects).
+  * Overall grade of 20.11/20 (exceeding maximum grade through optional subjects).
