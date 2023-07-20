@@ -29,8 +29,8 @@ Education
 ======
 * Imperial College London, MSci Physics with a Year Abroad (2019-2023)
   * MSci Project:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS.
-  * Year abroad at Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland (2021-2022). Courses included particle, accelerator and computational physics.
-  * Final year modules include: Advanced Particle Physics, Quantum Field Theory, Unification.
+  * Year abroad at Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland.
+  * Dean's List (Year 3), Ken Allen Prize for Academic Excellence (2022).
 
 * Lyc&eacute;e Francais Charles de Gaulle, French Baccalaureate (2012-2019)
   * Scientific stream, specialisation in Mathematics, Highest honors (Mention Tr&egrave;s Bien).
