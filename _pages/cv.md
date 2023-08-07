@@ -7,7 +7,6 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
 
 
 This is a brief summary of my education and research experiences, for further information please contact me via [email](mailto:lucas.russell@cern.ch "mail"). 
