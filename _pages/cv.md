@@ -12,13 +12,13 @@ redirect_from:
 This is a brief summary of my education and research experiences, for further information please contact me via [email](mailto:lucas.russell@cern.ch "mail"). 
 
 ## Education
-* **Imperial College London, MSci Physics with a Year Abroad** (2019-2023)
+* **Imperial College London**, MSci Physics with a Year Abroad (2019-2023)
   * First Class Honours (79.47% overall)
   * Master's Thesis:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS (awarded 90%).
   * Year abroad at Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland.
   * Awards: Dean's List (Year 3), Ken Allen Prize for Academic Excellence (2022).
 
-* **Lyc&eacute;e Francais Charles de Gaulle, French Baccalaureate** (2012-2019)
+* **Lyc&eacute;e Francais Charles de Gaulle**, French Baccalaureate (2012-2019)
   * Scientific stream, specialisation in Mathematics, Highest honors (Mention Tr&egrave;s Bien).
   * Overall grade of 20.11/20 (exceeding maximum grade through optional subjects).
 
@@ -43,7 +43,7 @@ This is a brief summary of my education and research experiences, for further in
   * Determined an analytical solution to the convolution integral of a modified Lorentzian and a Gaussian, to combine the effects of several broadening mechanisms for spectral fitting.
 
 ## Teaching Experience 
-* **Imperial College London, Undergraduate Teaching Assistant** (2022-2023)
+* **Imperial College London**, Undergraduate Teaching Assistant (2022-2023)
   * Demonstrator on the Year 1 Practical Physics Course. 
   * Assisting first year undergraduates during computing (python) and data analysis sessions.
 
