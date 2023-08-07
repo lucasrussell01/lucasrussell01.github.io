@@ -42,4 +42,9 @@ This is a brief summary of my education and research experiences, for further in
   * Summer Project on the Joint European Torus (JET) Experiment.
   * Determined an analytical solution to the convolution integral of a modified Lorentzian and a Gaussian, to combine the effects of several broadening mechanisms for spectral fitting.
 
+## Teaching Experience 
+* **Imperial College London, Undergraduate Teaching Assistant** (2022-2023)
+  * Demonstrator on the Year 1 Practical Physics Course. 
+  * Assisting first year undergraduates during computing (python) and data analysis sessions.
+
 
