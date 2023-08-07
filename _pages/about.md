@@ -19,7 +19,7 @@ My master's thesis on the identification of hadronic tau lepton decays with doma
  [CERN-THESIS-2022-126](https://cds.cern.ch/record/2827366/ "Thesis").
 
 Here, you can find links to my [GitHub](https://github.com/lucasrussell01 "github") account (with code from several past projects) and my 
-[LinkedIn](https://www.linkedin.com/in/lucasrussell01/ "linkedin"), as well as my [email](mailto:lucas.russell19@imperial.ac.uk "mail") address 
+[LinkedIn](https://www.linkedin.com/in/lucasrussell01/ "linkedin"), as well as my [email](mailto:lucas.russell@cern.ch "mail") address 
 if you'd like to get in touch. 
 
 In the future, this website will include descriptions of some of my work on the [Compact Muon Solenoid](https://cms.cern/ "CMS") (CMS) experiment at CERN,
