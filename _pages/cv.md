@@ -11,8 +11,7 @@ redirect_from:
 
 This is a brief summary of my education and research experiences, for further information please contact me via [email](mailto:lucas.russell@cern.ch "mail"). 
 
-Education
-======
+##Education
 * **Imperial College London, MSci Physics with a Year Abroad** (2019-2023)
   * First Class Honours (79.47% overall)
   * Master's Thesis:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS (awarded 90%).
@@ -23,14 +22,12 @@ Education
   * Scientific stream, specialisation in Mathematics, Highest honors (Mention Tr&egrave;s Bien).
   * Overall grade of 20.11/20 (exceeding maximum grade through optional subjects).
 
-Research Skills
-======
+##Research Skills
 * **Programming**: Python, C++ (including ROOT), Linux (Bash/Zsh), Latex.
 * **Machine Learning**: Deep Neural Networks (Dense, Convolutional and Pooling Layers) for classification and regression. Experienced with TensorFlow/Keras packages.
 * **Other**: Communication of results (e.g. presentations), teamwork, problem solving, and collaborative coding/version control (Git, GitHub).
 
-Research Experience
-======
+##Research Experience
 * **High Energy Physics Group, Imperial College London** (Summer 2022)
   * Summer Project on the Compact Muon Solenoid (CMS) Experiment.
   * Improved the reconstruction of neutral pions in hadronic tau lepton decays for an analysis of the CP structure of the Yukawa coupling between the Higgs boson and taus.
