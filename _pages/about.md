@@ -28,7 +28,7 @@ primarily focused on studies of the Higgs boson decaying into tau leptons and ta
 Education
 ======
 * **Imperial College London**, MSci Physics with a Year Abroad (2019-2023)
-  * First Class Honours
+  * First Class Honours.
   * Master's Thesis:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS.
   * Year abroad at Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland.
   * Dean's List (Year 3), Ken Allen Prize for Academic Excellence (2022).

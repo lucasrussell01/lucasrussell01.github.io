@@ -12,6 +12,7 @@ November 2021-July 2022
 My MSci project was on the identification of hadronic tau lepton decays at the Compact Muon Solenoid experiment, using a deep convolutional neural network called DeepTau.
  I introduced domain adaptation into the training workflow using adversarial machine learning techniques, which significantly reduced performance discrepancies
  between collider data and simulated events for discrimination against quark and gluon jets.
+This work has been integrated into central CMS software and will be used for physics analyses of the early Run 3 data taking period.
 
 My thesis is available online at [cds.cern.ch/record/2827366/](https://cds.cern.ch/record/2827366/ "cdslink"), you can read the abstract here:
 
