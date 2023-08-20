@@ -9,16 +9,23 @@
       <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
     {% endif %}
     
+    {% if site.author.email %}
+        <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+    {% endif %}
+
     <li><a href="https://linkedin.com/in/{{ site.linkedin.username }}"><i class="fab fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
-    
+    {% if site.author.inspire %}
+      <li><a href="https://inspirehep.net/authors/2686809"><i class="ai ai-inspire-square ai-fw" aria-hidden="true"></i> INSPIRE-HEP</a></li>
+    {% endif %}
     {% if site.author.github %}
       <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
-    {% if site.author.googlescholar %}
-      <li><a href="https://scholar.google.com/citations?user=DCdjsvAAAAAJ&hl=en"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
-    {% endif %}
     {% if site.author.orcid %}
       <li><a href="https://orcid.org/0000-0002-6502-2185"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a></li>
+    {% endif %}
+
+    {% if site.author.googlescholar %}
+      <li><a href="https://scholar.google.com/citations?user=DCdjsvAAAAAJ&hl=en"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
     {% endif %}
 
     {% if site.author.bitbucket %}
