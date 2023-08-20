@@ -28,6 +28,11 @@ This is a brief summary of my education and research experiences, for further in
 * **Other**: Communication of results (e.g. presentations), teamwork, problem solving, and collaborative coding/version control (Git, GitHub).
 
 ## Research Experience
+
+* **Institute of Particle and Nuclear Studies, KEK Tsukuba** (Summer 2023)
+  * Summer student on the future muon g-2/EDM experiment at J-PARC.
+  * Simulation and Hardware projects on laser ionisation and particle transport for muon cooling.
+
 * **High Energy Physics Group, Imperial College London** (Summer 2022)
   * Summer Project on the Compact Muon Solenoid (CMS) Experiment.
   * Improved the reconstruction of neutral pions in hadronic tau lepton decays for an analysis of the CP structure of the Yukawa coupling between the Higgs boson and taus.
@@ -45,6 +50,6 @@ This is a brief summary of my education and research experiences, for further in
 ## Teaching Experience 
 * **Imperial College London**, Undergraduate Teaching Assistant (2022-2023)
   * Demonstrator on the Year 1 Practical Physics Course. 
-  * Assisting first year undergraduates during computing (python) and data analysis sessions.
+  * Assisted first year undergraduates during computing (python) and data analysis sessions.
 
 
