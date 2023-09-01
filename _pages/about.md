@@ -10,7 +10,7 @@ redirect_from:
 
 
 
-I am incoming PhD student in elementary particle physics at [Imperial College London](https://www.imperial.ac.uk/ "ICL") supported
+I am incoming PhD student in elementary particle physics at [Imperial College London](https://www.imperial.ac.uk/ "ICL"), supported
  by the Schr&ouml;dinger Scholarship.
 I'll be working on an analysis of the CP structure of the Yukawa coupling between the Higgs boson and Tau leptons on the 
 [Compact Muon Solenoid](https://cms.cern/ "CMS") experiment at CERN.

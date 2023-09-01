@@ -12,6 +12,11 @@ redirect_from:
 This is a brief summary of my education and research experiences, for further information please contact me via [email](mailto:lucas.russell@cern.ch "mail"). 
 
 ## Education
+
+* **Imperial College London**, PhD in High Energy Physics (2023-2027)
+  * Analysis of the CP structure of the Yukawa coupling between the Higgs boson and Tau leptons at CMS.
+  * Supported by the Schr&ouml;dinger Scholarship.
+
 * **Imperial College London**, MSci Physics with a Year Abroad (2019-2023)
   * First Class Honours (79.47% overall)
   * Master's Thesis:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS (awarded 90%).
