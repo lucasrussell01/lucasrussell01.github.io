@@ -21,7 +21,7 @@ This is a brief summary of my education and research experiences, for further in
   * First Class Honours (79.47% overall)
   * Master's Thesis:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS (awarded 90%).
   * Year abroad at Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland.
-  * Awards: Dean's List (Year 3), Ken Allen Prize for Academic Excellence (2022).
+  * Awards: Dean's List (Year 4), Dean's List (Year 3), Ken Allen Prize for Academic Excellence (2022).
 
 * **Lyc&eacute;e Francais Charles de Gaulle**, French Baccalaureate (2012-2019)
   * Scientific stream, specialisation in Mathematics, Highest honours (Mention Tr&egrave;s Bien).
