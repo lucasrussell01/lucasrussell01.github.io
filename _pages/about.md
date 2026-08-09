@@ -12,7 +12,7 @@ redirect_from:
 
 I'm a PhD student in elementary particle physics at [Imperial College London](https://www.imperial.ac.uk/high-energy-physics/ "ICL"), supported
  by the Schr&ouml;dinger Scholarship.
-I'll be working on an analysis of the CP structure of the Yukawa coupling between the Higgs boson and Tau leptons on the 
+I'm working on an analysis of the CP structure of the Yukawa coupling between the Higgs boson and Tau leptons on the 
 [Compact Muon Solenoid](https://cms.cern/ "CMS") experiment at CERN.
 
 
