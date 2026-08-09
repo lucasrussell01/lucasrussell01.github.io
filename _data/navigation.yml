@@ -2,13 +2,13 @@
 main:
   - title: "MSci Project"
     url: /DeepTau/
-  
-  # - title: "DeepPi0"
-  #   url: /DeepPi0/
 
-  # - title: "JET Project"
-  #   url: /jet/
-    
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Teaching & Outreach"
+    url: /teaching/
+
   - title: "CV"
     url: /cv/
-    
+
