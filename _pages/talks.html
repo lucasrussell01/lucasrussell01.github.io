@@ -1,16 +1,16 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% assign published_talks = site.talks | where_exp: "t", "t.published != false" %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+{% if published_talks.size == 0 %}
+  <p>No talks listed yet &mdash; check back soon.</p>
 {% endif %}
 
-{% for post in site.talks reversed %}
+{% for post in published_talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}

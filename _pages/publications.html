@@ -9,12 +9,32 @@ author_profile: true
 
 <p>This list is pulled automatically from my <a href="{{ site.author.inspire }}">INSPIRE-HEP</a> profile, so it updates itself as new papers appear. As a member of the CMS Collaboration, it includes collaboration-wide analysis papers alongside anything I've led or contributed to directly.</p>
 
-<div id="publications-list">
-  <p class="page__meta">Loading publications from INSPIRE-HEP&hellip;</p>
-</div>
+<div id="selected-publications"></div>
+
+<details id="all-publications">
+  <summary id="all-publications-summary">Show full publication list (from INSPIRE-HEP)</summary>
+  <div id="publications-list">
+    <p class="page__meta">Loading publications from INSPIRE-HEP&hellip;</p>
+  </div>
+</details>
 
 <noscript>
   <p>JavaScript is required to load this list automatically. You can view it directly on <a href="{{ site.author.inspire }}">INSPIRE-HEP</a>.</p>
 </noscript>
 
+<h2>Other Public Documents</h2>
+<p>Documents not indexed on INSPIRE-HEP, such as my thesis and public CMS notes.</p>
+
+{% for doc in site.data.other_documents %}
+  <div class="list__item">
+    <article class="archive__item">
+      <h3 class="archive__item-title"><a href="{{ doc.url }}" rel="permalink">{{ doc.title }}</a></h3>
+      <p class="archive__item-excerpt">{{ doc.type }}{% if doc.venue %}, {{ doc.venue }}{% endif %}{% if doc.date %} ({{ doc.date }}){% endif %}</p>
+    </article>
+  </div>
+{% endfor %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.2/dist/katex.min.css" integrity="sha384-qArEAQvOPs1o7K1iAybhs66g8nYTXVt4VLOQ3abu+OMLJyPNfaH4Wpko0X2epHJ+" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.2/dist/katex.min.js" integrity="sha384-IHT6Yddb0KLCzZaxQ/so1j3xkJ8R6hOkCR06ma9NDHGn0Z4ClKcGtQ6qqsflRPxR" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.18.2/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"></script>
 <script src="{{ base_path }}/assets/js/publications.js"></script>
