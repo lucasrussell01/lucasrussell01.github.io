@@ -2,7 +2,7 @@
   var INSPIRE_BAI = "L.Russell.1";
   var API_URL =
     "https://inspirehep.net/api/literature?sort=mostrecent&size=250&fields=" +
-    "titles,publication_info,arxiv_eprints,dois,earliest_date,collaborations,control_number,citation_count" +
+    "titles,publication_info,arxiv_eprints,dois,earliest_date,collaborations,control_number,citation_count,public_notes" +
     "&q=" + encodeURIComponent("a " + INSPIRE_BAI);
   var PROFILE_URL = "https://inspirehep.net/authors/2686809";
 
@@ -11,7 +11,8 @@
   // INSPIRE record) in the order you want them to appear. Leave empty to hide
   // the section entirely.
   var SELECTED_ARXIV_IDS = [
-    // "2211.12345",
+    "2606.03510",
+    "2511.05468"
   ];
 
   var listContainer = document.getElementById("publications-list");
@@ -36,6 +37,20 @@
       }
       return venue;
     }
+
+    var submittedNote = (metadata.public_notes || [])
+      .map(function (n) { return n.value; })
+      .find(function (v) { return /^Submitted to /i.test(v); });
+    if (submittedNote) {
+      var match = submittedNote.match(/^Submitted to (?:the )?(.+?)(?:\.\s+All figures|\.?\s*$)/i);
+      if (match) {
+        var submittedEprint = (metadata.arxiv_eprints || [])[0];
+        var submittedVenue = "Submitted to " + match[1];
+        if (submittedEprint) submittedVenue += " (arXiv:" + submittedEprint.value + ")";
+        return submittedVenue;
+      }
+    }
+
     var eprint = (metadata.arxiv_eprints || [])[0];
     if (eprint) {
       return "arXiv:" + eprint.value + " (preprint)";
