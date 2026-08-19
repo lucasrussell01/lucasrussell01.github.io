@@ -207,37 +207,24 @@
     });
   }
 
-  function renderOtherDocumentCitations() {
+  function renderOtherDocumentCitations(hits) {
     var elements = document.querySelectorAll("[data-inspire-id]");
     if (elements.length === 0) return;
 
-    var ids = Array.prototype.map.call(elements, function (el) {
-      return el.getAttribute("data-inspire-id");
+    // These documents (theses, proceedings, etc.) are already picked up by
+    // the main author search below, so their citation counts are sourced
+    // from that same fetch rather than a separate API call.
+    var byId = {};
+    hits.forEach(function (hit) {
+      var metadata = hit.metadata || {};
+      byId[metadata.control_number] = metadata.citation_count;
     });
-    var query = ids.map(function (id) { return "recid:" + id; }).join(" or ");
-    var url =
-      "https://inspirehep.net/api/literature?fields=control_number,citation_count&q=" +
-      encodeURIComponent(query);
 
-    fetch(url)
-      .then(function (response) {
-        return response.ok ? response.json() : null;
-      })
-      .then(function (data) {
-        var hits = data && (data.hits || {}).hits;
-        if (!hits) return;
-        var byId = {};
-        hits.forEach(function (hit) {
-          byId[hit.metadata.control_number] = hit.metadata.citation_count;
-        });
-        Array.prototype.forEach.call(elements, function (el) {
-          var citations = byId[el.getAttribute("data-inspire-id")];
-          if (typeof citations !== "number") return;
-          el.textContent +=
-            " · " + citations + (citations === 1 ? " citation" : " citations");
-        });
-      })
-      .catch(function () {});
+    Array.prototype.forEach.call(elements, function (el) {
+      var citations = byId[el.getAttribute("data-inspire-id")];
+      if (typeof citations !== "number") return;
+      el.textContent += " · " + citations + (citations === 1 ? " citation" : " citations");
+    });
   }
 
   function renderMath(el) {
@@ -251,8 +238,6 @@
       throwOnError: false,
     });
   }
-
-  renderOtherDocumentCitations();
 
   fetch(API_URL)
     .then(function (response) {
@@ -270,6 +255,7 @@
       }
       renderSelected(hits);
       renderFullList(hits);
+      renderOtherDocumentCitations(hits);
       renderMath(listContainer);
     })
     .catch(function () {

@@ -12,7 +12,7 @@ redirect_from:
 I'm a PhD student in elementary particle physics at [Imperial College London](https://www.imperial.ac.uk/high-energy-physics/ "ICL"), supported
  by the Schr&ouml;dinger Scholarship.
 My research thus far has focused on the CP structure of the Higgs boson's Yukawa coupling to tau leptons, and on machine-learning-based tau reconstruction and identification, at the [Compact Muon Solenoid](https://cms.cern/ "CMS") experiment at CERN.
-I will be available for new opportunities from February 2027, once I have defended my PhD thesis, which I am currently writing.
+I am currently writing my PhD thesis, and will be available for new opportunities from February 2027.
 
 A selection of my key publications is available on my [publications page](/publications/#selected-publications) and my CV can be found [here](/cv/).
 

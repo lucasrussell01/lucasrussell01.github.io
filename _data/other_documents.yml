@@ -1,4 +1,5 @@
-# Public documents that aren't indexed on INSPIRE-HEP (theses, CMS notes, etc.)
+# Public documents (theses, conference proceedings, CMS notes, etc.) that
+# aren't published in a journal, highlighted separately from the main list.
 # Shown on the Publications page under "Other Public Documents".
 # Add more entries following the same format:
 # - title: "Document title"
