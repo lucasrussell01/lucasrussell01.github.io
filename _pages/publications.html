@@ -20,12 +20,13 @@ author_profile: true
     <div class="list__item">
       <article class="archive__item">
         <h3 class="archive__item-title"><a href="{{ doc.url }}" rel="permalink">{{ doc.title }}</a></h3>
-        <p class="archive__item-excerpt">{% if doc.author %}{{ doc.author }}, {% endif %}{{ doc.type }}{% if doc.venue %}, {{ doc.venue }}{% endif %}{% if doc.date %} ({{ doc.date }}){% endif %}</p>
+        <p class="archive__item-excerpt"{% if doc.inspire_id %} data-inspire-id="{{ doc.inspire_id }}"{% endif %}>{% if doc.author %}{{ doc.author }}, {% endif %}{{ doc.type }}{% if doc.venue %}, {{ doc.venue }}{% endif %}{% if doc.date %} ({{ doc.date }}){% endif %}</p>
       </article>
     </div>
   {% endfor %}
 </details>
 
+<h2>All Publications</h2>
 <p>A list of all publications (pulled from my <a href="{{ site.author.inspire }}">INSPIRE-HEP</a> profile) can be viewed below:</p>
 
 <details id="all-publications">

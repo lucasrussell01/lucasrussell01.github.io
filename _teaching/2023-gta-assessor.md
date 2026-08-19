@@ -1,7 +1,7 @@
 ---
-title: "Graduate Teaching Assistant / Assessor"
+title: "Teaching"
 collection: teaching
-type: ""
+type: "Graduate Teaching Assistant / Assessor"
 venue: "Department of Physics, Imperial College London"
 date: 2023-10-01
 location: "London, UK"

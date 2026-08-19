@@ -7,6 +7,9 @@
 #   venue: "CMS Collaboration"              # optional
 #   date: 2023                              # optional
 #   url: "https://cds.cern.ch/record/..."
+#   inspire_id: 1234567                     # optional - INSPIRE record number
+#                                            # (from an inspirehep.net/literature/NNNNNNN
+#                                            # URL), shows a live citation count if set
 
 - title: "Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS"
   type: "Master's Thesis"
@@ -14,6 +17,7 @@
   venue: "Imperial College London"
   date: 2022
   url: "https://cds.cern.ch/record/2827366/"
+  inspire_id: 2687671
 
 - title: "Higgs CP studies and other Higgs properties at ATLAS and CMS"
   type: "Conference Proceedings"
@@ -21,3 +25,4 @@
   venue: "Rencontres de Moriond QCD"
   date: 2026
   url: "https://arxiv.org/abs/2606.05897"
+  inspire_id: 3165412
