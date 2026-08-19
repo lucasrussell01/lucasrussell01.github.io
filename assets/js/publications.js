@@ -4,7 +4,6 @@
     "https://inspirehep.net/api/literature?sort=mostrecent&size=250&fields=" +
     "titles,publication_info,arxiv_eprints,dois,earliest_date,collaborations,control_number,citation_count,public_notes" +
     "&q=" + encodeURIComponent("a " + INSPIRE_BAI);
-  var PROFILE_URL = "https://inspirehep.net/authors/2686809";
 
   // To feature specific papers at the top of the page under "Selected Publications",
   // add their arXiv IDs below (e.g. from arxiv.org/abs/XXXX.XXXXX or the paper's
@@ -23,10 +22,7 @@
     { id: "2608.10961", submittedTo: "Phys. Rev. D" }
   ];
 
-  var listContainer = document.getElementById("publications-list");
   var selectedContainer = document.getElementById("selected-publications");
-  var summary = document.getElementById("all-publications-summary");
-  if (!listContainer) return;
 
   function escapeHtml(str) {
     var div = document.createElement("div");
@@ -140,32 +136,6 @@
     return html;
   }
 
-  function renderFullList(hits) {
-    var byYear = {};
-    hits.forEach(function (hit) {
-      var metadata = hit.metadata || {};
-      var year = (metadata.earliest_date || "0000").slice(0, 4);
-      byYear[year] = byYear[year] || [];
-      byYear[year].push(metadata);
-    });
-
-    var years = Object.keys(byYear).sort().reverse();
-    var html = "";
-
-    years.forEach(function (year) {
-      html += '<h2 class="archive__subtitle">' + escapeHtml(year) + "</h2>";
-      byYear[year].forEach(function (metadata) {
-        html += renderItem(metadata);
-      });
-    });
-
-    listContainer.innerHTML = html;
-    if (summary) {
-      summary.textContent =
-        "Show full publication list (" + hits.length + " papers, from INSPIRE-HEP)";
-    }
-  }
-
   function renderSelected(hits) {
     if (!selectedContainer || SELECTED_ARXIV_IDS.length === 0) return;
 
@@ -246,22 +216,12 @@
     })
     .then(function (data) {
       var hits = (data.hits || {}).hits || [];
-      if (hits.length === 0) {
-        listContainer.innerHTML =
-          '<p>No publications found. View my profile directly on <a href="' +
-          PROFILE_URL +
-          '">INSPIRE-HEP</a>.</p>';
-        return;
-      }
+      if (hits.length === 0) return;
       renderSelected(hits);
-      renderFullList(hits);
       renderOtherDocumentCitations(hits);
-      renderMath(listContainer);
     })
     .catch(function () {
-      listContainer.innerHTML =
-        '<p>Sorry, the publication list couldn&rsquo;t be loaded right now. You can view it directly on <a href="' +
-        PROFILE_URL +
-        '">INSPIRE-HEP</a>.</p>';
+      // Selected Publications / citation counts just stay blank on failure -
+      // the static "full list on INSPIRE-HEP" link on the page still works.
     });
 })();
