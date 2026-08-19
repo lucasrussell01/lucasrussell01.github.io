@@ -12,7 +12,8 @@
   // the section entirely.
   var SELECTED_ARXIV_IDS = [
     "2606.03510",
-    "2511.05468"
+    "2511.05468",
+    "2608.10961"
   ];
 
   var listContainer = document.getElementById("publications-list");
