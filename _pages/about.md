@@ -14,7 +14,7 @@ I'm a PhD student in elementary particle physics at [Imperial College London](ht
 My research thus far has focused on the CP structure of the Higgs boson's Yukawa coupling to tau leptons, and on machine-learning-based tau reconstruction and identification, at the [Compact Muon Solenoid](https://cms.cern/ "CMS") experiment at CERN.
 I will be available for new opportunities from February 2027, once I have defended my PhD thesis, which I am currently writing.
 
-A selection of my key publications is available on my [publications page](/publications/#selected-publications) and in my [CV](/cv/).
+A selection of my key publications is available on my [publications page](/publications/#selected-publications) and my CV can be found [here](/cv/).
 
 Here, you can find links to my [GitHub](https://github.com/lucasrussell01 "github") account (with code from several past projects) and my 
 [LinkedIn](https://www.linkedin.com/in/lucasrussell01/ "linkedin") and [INSPIRE-HEP](https://inspirehep.net/authors/2686809 'inspire') profiles, 
