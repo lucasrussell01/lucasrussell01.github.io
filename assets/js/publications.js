@@ -10,10 +10,17 @@
   // add their arXiv IDs below (e.g. from arxiv.org/abs/XXXX.XXXXX or the paper's
   // INSPIRE record) in the order you want them to appear. Leave empty to hide
   // the section entirely.
+  //
+  // Each entry can be either:
+  //   - a plain arXiv ID string, e.g. "2606.03510" (venue is worked out
+  //     automatically from INSPIRE, including "Submitted to X" if INSPIRE
+  //     already has a note to that effect)
+  //   - an object { id: "2606.03510", submittedTo: "JHEP" } to force a
+  //     "Submitted to JHEP" line, for papers INSPIRE hasn't tagged yet
   var SELECTED_ARXIV_IDS = [
-    "2606.03510",
+    { id: "2606.03510", submittedTo: "JHEP" },
     "2511.05468",
-    "2608.10961"
+    { id: "2608.10961", submittedTo: "Phys. Rev. D" }
   ];
 
   var listContainer = document.getElementById("publications-list");
@@ -27,7 +34,7 @@
     return div.innerHTML;
   }
 
-  function formatVenue(metadata) {
+  function formatVenue(metadata, submittedToOverride) {
     var info = (metadata.publication_info || [])[0];
     if (info && info.journal_title) {
       var parts = [info.journal_title];
@@ -37,6 +44,13 @@
         venue += ", " + (info.artid || info.page_start);
       }
       return venue;
+    }
+
+    if (submittedToOverride) {
+      var overrideEprint = (metadata.arxiv_eprints || [])[0];
+      var overrideVenue = "Submitted to " + submittedToOverride;
+      if (overrideEprint) overrideVenue += " (arXiv:" + overrideEprint.value + ")";
+      return overrideVenue;
     }
 
     var submittedNote = (metadata.public_notes || [])
@@ -59,12 +73,12 @@
     return "";
   }
 
-  function renderItem(metadata) {
+  function renderItem(metadata, submittedToOverride) {
     var title = (metadata.titles || [])[0];
     title = title ? title.title : "Untitled";
     var recordUrl = "https://inspirehep.net/literature/" + metadata.control_number;
     var collaboration = (metadata.collaborations || [])[0];
-    var venue = formatVenue(metadata);
+    var venue = formatVenue(metadata, submittedToOverride);
     var citations = metadata.citation_count;
 
     var html = '<div class="list__item"><article class="archive__item">';
@@ -126,10 +140,12 @@
     });
 
     var html = "";
-    SELECTED_ARXIV_IDS.forEach(function (id) {
+    SELECTED_ARXIV_IDS.forEach(function (entry) {
+      var id = typeof entry === "string" ? entry : entry.id;
+      var submittedTo = typeof entry === "object" ? entry.submittedTo : undefined;
       var cleanId = id.replace(/^arXiv:/i, "");
       var metadata = byArxivId[cleanId];
-      if (metadata) html += renderItem(metadata);
+      if (metadata) html += renderItem(metadata, submittedTo);
     });
 
     if (html) {
