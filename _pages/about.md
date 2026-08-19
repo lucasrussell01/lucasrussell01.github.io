@@ -22,7 +22,7 @@ as well as my [email](mailto:lucas.russell@cern.ch "mail") address if you'd like
 
 This website is currently being reorganised. In the future, it will include descriptions of some of my work on CMS, primarily focused on studies of the Higgs boson decaying into tau leptons, and machine learning based tau reconstruction/identification. In the meantime, you can find more information in my [CV](/cv/).
 
-My master's thesis on the identification of hadronic tau lepton decays with domain adaptation using adversarial machine learning techniques at CMS is available online
+My master's thesis on the identification of hadronic tau lepton decays with domain adaptation at CMS is available online
  [CERN-THESIS-2022-126](https://cds.cern.ch/record/2827366/ "Thesis").
 
 
