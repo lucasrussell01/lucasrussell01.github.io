@@ -3,12 +3,21 @@
 # Add more entries following the same format:
 # - title: "Document title"
 #   type: "CMS Detector Performance Note"   # or "Master's Thesis", "PhD Thesis", etc.
+#   author: "L. Russell"                    # optional
 #   venue: "CMS Collaboration"              # optional
 #   date: 2023                              # optional
 #   url: "https://cds.cern.ch/record/..."
 
 - title: "Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS"
   type: "Master's Thesis"
+  author: "L. Russell"
   venue: "Imperial College London"
   date: 2022
   url: "https://cds.cern.ch/record/2827366/"
+
+- title: "Higgs CP studies and other Higgs properties at ATLAS and CMS"
+  type: "Conference Proceedings"
+  author: "L. Russell"
+  venue: "Rencontres de Moriond QCD"
+  date: 2026
+  url: "https://arxiv.org/abs/2606.05897"

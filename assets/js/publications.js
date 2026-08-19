@@ -73,13 +73,44 @@
     return "";
   }
 
-  function renderItem(metadata, submittedToOverride) {
+  function formatAuthors(authors) {
+    if (!authors || authors.length === 0) return "";
+    var names = authors.map(function (a) {
+      var parts = (a.full_name || "").split(",");
+      var last = (parts[0] || "").trim();
+      var first = (parts[1] || "").trim();
+      return (first ? first.charAt(0) + ". " : "") + last;
+    });
+    if (names.length > 6) return names[0] + " et al.";
+    if (names.length === 1) return names[0];
+    return names.slice(0, -1).join(", ") + " and " + names[names.length - 1];
+  }
+
+  function fetchAuthors(arxivId) {
+    var url =
+      "https://inspirehep.net/api/literature?fields=authors&q=" +
+      encodeURIComponent("arxiv:" + arxivId);
+    return fetch(url)
+      .then(function (response) {
+        return response.ok ? response.json() : null;
+      })
+      .then(function (data) {
+        var hit = data && (data.hits || {}).hits && data.hits.hits[0];
+        return hit ? hit.metadata.authors || [] : [];
+      })
+      .catch(function () {
+        return [];
+      });
+  }
+
+  function renderItem(metadata, submittedToOverride, authors) {
     var title = (metadata.titles || [])[0];
     title = title ? title.title : "Untitled";
     var recordUrl = "https://inspirehep.net/literature/" + metadata.control_number;
     var collaboration = (metadata.collaborations || [])[0];
     var venue = formatVenue(metadata, submittedToOverride);
     var citations = metadata.citation_count;
+    var authorText = collaboration ? "" : formatAuthors(authors);
 
     var html = '<div class="list__item"><article class="archive__item">';
     html +=
@@ -88,12 +119,18 @@
       '" rel="permalink">' +
       escapeHtml(title) +
       "</a></h3>";
-    if (venue || collaboration || typeof citations === "number") {
+    if (venue || collaboration || authorText || typeof citations === "number") {
       html += '<p class="archive__item-excerpt">';
       if (venue) html += escapeHtml(venue);
-      if (venue && collaboration) html += " &mdash; ";
-      if (collaboration) html += escapeHtml(collaboration.value) + " Collaboration";
-      if ((venue || collaboration) && typeof citations === "number") html += " &middot; ";
+      if (venue && (collaboration || authorText)) html += " &mdash; ";
+      if (collaboration) {
+        html += escapeHtml(collaboration.value) + " Collaboration";
+      } else if (authorText) {
+        html += escapeHtml(authorText);
+      }
+      if ((venue || collaboration || authorText) && typeof citations === "number") {
+        html += " &middot; ";
+      }
       if (typeof citations === "number") {
         html += citations + (citations === 1 ? " citation" : " citations");
       }
@@ -139,19 +176,35 @@
       if (eprint) byArxivId[eprint.value] = metadata;
     });
 
-    var html = "";
-    SELECTED_ARXIV_IDS.forEach(function (entry) {
-      var id = typeof entry === "string" ? entry : entry.id;
-      var submittedTo = typeof entry === "object" ? entry.submittedTo : undefined;
-      var cleanId = id.replace(/^arXiv:/i, "");
-      var metadata = byArxivId[cleanId];
-      if (metadata) html += renderItem(metadata, submittedTo);
+    var entries = SELECTED_ARXIV_IDS
+      .map(function (entry) {
+        var id = typeof entry === "string" ? entry : entry.id;
+        var submittedTo = typeof entry === "object" ? entry.submittedTo : undefined;
+        var cleanId = id.replace(/^arXiv:/i, "");
+        var metadata = byArxivId[cleanId];
+        return metadata ? { metadata: metadata, submittedTo: submittedTo, cleanId: cleanId } : null;
+      })
+      .filter(Boolean);
+
+    // Only fetch author names for papers without a collaboration (i.e. not a
+    // CMS-wide paper) - collaboration papers can have 1000s of authors, so we
+    // avoid ever requesting that field for them.
+    var authorFetches = entries.map(function (e) {
+      var hasCollaboration = (e.metadata.collaborations || []).length > 0;
+      return hasCollaboration ? Promise.resolve(null) : fetchAuthors(e.cleanId);
     });
 
-    if (html) {
-      selectedContainer.innerHTML = "<h2>Selected Publications</h2>" + html;
-      renderMath(selectedContainer);
-    }
+    Promise.all(authorFetches).then(function (authorsList) {
+      var html = "";
+      entries.forEach(function (e, i) {
+        html += renderItem(e.metadata, e.submittedTo, authorsList[i]);
+      });
+
+      if (html) {
+        selectedContainer.innerHTML = "<h2>Selected Publications</h2>" + html;
+        renderMath(selectedContainer);
+      }
+    });
   }
 
   function renderMath(el) {

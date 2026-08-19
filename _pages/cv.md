@@ -13,16 +13,16 @@ This is a brief summary of my education and research experiences, for further in
 
 ## Education
 
-* **Imperial College London**, PhD in High Energy Physics (2023- Feb. 2027)
+* **PhD in High Energy Physics**, Imperial College London (2023&ndash;Feb. 2027)
   * PhD Thesis: "Exploiting spin correlations in tau lepton decays to probe the CP structure of the Yukawa coupling to the Higgs boson", supervised by Prof. David Colling
   * Long-term placement at CERN (2024–2025).
 
-* **Imperial College London**, MSci Physics with a Year Abroad (2019-2023)
+* **MSci Physics with a Year Abroad**, Imperial College London (2019-2023)
   * First Class Honours, average of 79.5%
   * Master's Thesis: "Identification of hadronic tau lepton decays with domain adaptation using adversarial machine learning techniques at CMS", supervised by Dr Konstantin Androsov (awarded 90%).
   * Exchange year at École Polytechnique Fédérale de Lausanne (2021–2022), average of 5.67/6.
 
-* **Lyc&eacute;e Francais Charles de Gaulle**, French Baccalaureate (2012-2019)
+* **French Baccalaureate**, Lyc&eacute;e Francais Charles de Gaulle (2012-2019)
   * Scientific stream, specialisation in Mathematics, Highest honours (Mention Tr&egrave;s Bien), overall grade of 20.11/20.
 
 ## Research Experience
@@ -66,9 +66,9 @@ This is a brief summary of my education and research experiences, for further in
 
 A full list of publications is available on [INSPIRE-HEP](https://inspirehep.net/authors/2686809).
 
-* CMS Collaboration, "Analysis of the CP structure of the Yukawa coupling between the Higgs boson and tau leptons in proton-proton collisions at &radic;s = 13.6 TeV", [arXiv:2606.03510](https://arxiv.org/abs/2606.03510) [hep-ex], *submitted to JHEP* (2026).
-* CMS Collaboration, "Identification of tau leptons using a convolutional neural network with domain adaptation", [JINST 20 (2025) P12032](https://iopscience.iop.org/article/10.1088/1748-0221/20/12/P12032).
-* D. Winterbottom and L. Russell, "TauPolaris: reconstructing tau lepton polarimetric vectors with conditional normalizing flows", [arXiv:2608.10961](https://arxiv.org/abs/2608.10961) [hep-ph], *submitted to Phys. Rev. D* (2026).
+* [1] CMS Collaboration, "Analysis of the CP structure of the Yukawa coupling between the Higgs boson and tau leptons in proton-proton collisions at &radic;s = 13.6 TeV", [arXiv:2606.03510](https://arxiv.org/abs/2606.03510) [hep-ex], *submitted to JHEP* (2026).
+* [2] CMS Collaboration, "Identification of tau leptons using a convolutional neural network with domain adaptation", [JINST 20 (2025) P12032](https://iopscience.iop.org/article/10.1088/1748-0221/20/12/P12032).
+* [3] D. Winterbottom and L. Russell, "TauPolaris: reconstructing tau lepton polarimetric vectors with conditional normalizing flows", [arXiv:2608.10961](https://arxiv.org/abs/2608.10961) [hep-ph], *submitted to Phys. Rev. D* (2026).
 
 ## Conference Talks
 
@@ -90,9 +90,6 @@ A full list of publications is available on [INSPIRE-HEP](https://inspirehep.net
 
 * **Outreach** (2023–Present)
   * Introductory Standard Model lecture to 100+ high school students; CMS outreach video at Moriond QCD (40k+ views); public engagement at Imperial's Exhibition Road Festival; and CMS underground tour guide.
-
-* **Undergraduate Teaching Assistant**, Imperial College London (2022-2023)
-  * Demonstrator on the Year 1 Practical Physics Course, assisting first-year undergraduates during computing (Python) and data analysis sessions.
 
 ## Additional Skills and Interests
 

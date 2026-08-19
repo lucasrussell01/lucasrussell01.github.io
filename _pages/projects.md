@@ -2,12 +2,11 @@
 permalink: /projects/
 title: "Projects"
 author_profile: true
-redirect_from:
-  - /DeepTau/
-  - /msci/
 ---
 
-An overview of the research projects I've worked on at CMS, from my current PhD analysis back to my MSci project.
+This page is work in progress.
+
+An overview of the research projects I've worked on at CMS, from my current PhD analysis back to my MSci project. 
 
 ## Higgs-tau CP analysis
 
