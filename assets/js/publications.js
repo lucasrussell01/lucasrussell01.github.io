@@ -16,8 +16,11 @@
   //     already has a note to that effect)
   //   - an object { id: "2606.03510", submittedTo: "JHEP" } to force a
   //     "Submitted to JHEP" line, for papers INSPIRE hasn't tagged yet
+  //   - an object { id: "2606.03510", acceptedBy: "JHEP" } to force an
+  //     "Accepted by JHEP" line, for papers accepted but not yet formally
+  //     published with a journal_title on INSPIRE
   var SELECTED_ARXIV_IDS = [
-    { id: "2606.03510", submittedTo: "JHEP" },
+    { id: "2606.03510", acceptedBy: "JHEP" },
     "2511.05468",
     { id: "2608.10961", submittedTo: "Phys. Rev. D" }
   ];
@@ -30,7 +33,7 @@
     return div.innerHTML;
   }
 
-  function formatVenue(metadata, submittedToOverride) {
+  function formatVenue(metadata, submittedToOverride, acceptedByOverride) {
     var info = (metadata.publication_info || [])[0];
     if (info && info.journal_title) {
       var parts = [info.journal_title];
@@ -40,6 +43,13 @@
         venue += ", " + (info.artid || info.page_start);
       }
       return venue;
+    }
+
+    if (acceptedByOverride) {
+      var acceptedEprint = (metadata.arxiv_eprints || [])[0];
+      var acceptedVenue = "Accepted by " + acceptedByOverride;
+      if (acceptedEprint) acceptedVenue += " (arXiv:" + acceptedEprint.value + ")";
+      return acceptedVenue;
     }
 
     if (submittedToOverride) {
@@ -99,12 +109,12 @@
       });
   }
 
-  function renderItem(metadata, submittedToOverride, authors) {
+  function renderItem(metadata, submittedToOverride, acceptedByOverride, authors) {
     var title = (metadata.titles || [])[0];
     title = title ? title.title : "Untitled";
     var recordUrl = "https://inspirehep.net/literature/" + metadata.control_number;
     var collaboration = (metadata.collaborations || [])[0];
-    var venue = formatVenue(metadata, submittedToOverride);
+    var venue = formatVenue(metadata, submittedToOverride, acceptedByOverride);
     var citations = metadata.citation_count;
     var authorText = collaboration ? "" : formatAuthors(authors);
 
@@ -150,9 +160,12 @@
       .map(function (entry) {
         var id = typeof entry === "string" ? entry : entry.id;
         var submittedTo = typeof entry === "object" ? entry.submittedTo : undefined;
+        var acceptedBy = typeof entry === "object" ? entry.acceptedBy : undefined;
         var cleanId = id.replace(/^arXiv:/i, "");
         var metadata = byArxivId[cleanId];
-        return metadata ? { metadata: metadata, submittedTo: submittedTo, cleanId: cleanId } : null;
+        return metadata
+          ? { metadata: metadata, submittedTo: submittedTo, acceptedBy: acceptedBy, cleanId: cleanId }
+          : null;
       })
       .filter(Boolean);
 
@@ -167,7 +180,7 @@
     Promise.all(authorFetches).then(function (authorsList) {
       var html = "";
       entries.forEach(function (e, i) {
-        html += renderItem(e.metadata, e.submittedTo, authorsList[i]);
+        html += renderItem(e.metadata, e.submittedTo, e.acceptedBy, authorsList[i]);
       });
 
       if (html) {

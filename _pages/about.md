@@ -20,20 +20,17 @@ Here, you can find links to my [GitHub](https://github.com/lucasrussell01 "githu
 [LinkedIn](https://www.linkedin.com/in/lucasrussell01/ "linkedin") and [INSPIRE-HEP](https://inspirehep.net/authors/2686809 'inspire') profiles, 
 as well as my [email](mailto:lucas.russell@cern.ch "mail") address if you'd like to get in touch. 
 
-This website is currently being reorganised. In the future, it will include descriptions of some of my work on CMS, primarily focused on studies of the Higgs boson decaying into tau leptons, and machine learning based tau reconstruction/identification. In the meantime, you can find more information in my [CV](/cv/).
-
-My master's thesis on the identification of hadronic tau lepton decays with domain adaptation at CMS is available online
- [CERN-THESIS-2022-126](https://cds.cern.ch/record/2827366/ "Thesis").
+In the future, this website will include descriptions of some of my work on CMS, primarily focused on studies of the Higgs boson decaying into tau leptons, and machine learning based tau reconstruction/identification. In the meantime, you can find more information in my [CV](/cv/).
 
 
 ## Education
 
-* **PhD in High Energy Physics**, Imperial College London (2023-2027)
-  * Exploiting spin correlations in tau lepton decays to probe the CP structure of the Yukawa coupling to the Higgs boson.
+* **PhD in Particle Physics**, Imperial College London (2023&ndash;Feb. 2027)
+  * Exploring fundamental physics interactions through spin correlations in tau lepton pairs.
   * Supported by the Schr&ouml;dinger Scholarship.
 
-* **MSci Physics with a Year Abroad**, Imperial College London (2019-2023)
-  * First Class Honours.
+* **Master in Physics (MSci)**, Imperial College London (2019-2023)
+  * First Class Honours, average of 79.5% (top 5% of the cohort).
   * Master's Thesis:  Identification of Hadronic Tau Lepton Decays with Domain Adaptation using Adversarial Machine Learning Techniques at CMS.
   * Year abroad at Ecole Polytechnique F&eacute;d&eacute;rale de Lausanne, Switzerland.
   * Dean's List (Year 4), Dean's List (Year 3), Ken Allen Prize for Academic Excellence.
