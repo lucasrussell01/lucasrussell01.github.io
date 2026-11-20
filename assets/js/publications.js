@@ -20,7 +20,7 @@
   //     "Accepted by JHEP" line, for papers accepted but not yet formally
   //     published with a journal_title on INSPIRE
   var SELECTED_ARXIV_IDS = [
-    { id: "2606.03510", acceptedBy: "JHEP" },
+    "2606.03510",
     "2511.05468",
     { id: "2608.10961", submittedTo: "Phys. Rev. D" }
   ];

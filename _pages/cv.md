@@ -28,18 +28,18 @@ This is a brief summary of my education and research experiences, for further in
 ## Research Experience
 
 * **Analysis of the CP structure of the tau lepton Yukawa coupling at CMS** (2023–2026)
-  * Main analyser and contact person for the early Run 3 measurement of the CP nature of the Higgs boson coupling to tau leptons, accepted by JHEP ([arXiv:2606.03510](https://arxiv.org/abs/2606.03510)). Presented the result for the first time in a plenary talk at Moriond QCD.
+  * Lead analyser and contact person for the early Run 3 measurement of the CP nature of the Higgs boson coupling to tau leptons, published in JHEP ([JHEP 10 (2026) 084](https://doi.org/10.1007/JHEP10(2026)084)). Presented the result for the first time in a plenary talk at Moriond QCD.
   * Built a new columnar analysis framework (with `coffea`), improved analysis sensitivity with optimised event selections and classification, and performed the statistical inference and interpretation of results.
-  * Achieved world-leading sensitivity, with a better expected exclusion of the CP-odd scenario than the previous CMS result, despite using less than half the amount of data (65% increase accounting for reduced luminosity).
+  * Achieved a better expected exclusion of the CP-odd scenario than the previous CMS result, despite using less than half the amount of data (65% increase accounting for reduced luminosity), and world-leading sensitivity in combination with it.
 
 * **Identification of hadronic tau lepton decays with domain adaptation at CMS** (2022–2025)
-  * Core developer of `DeepTauv2p5`, the convolutional neural network which is the default tau identification algorithm for early Run 3 CMS analyses, published in JINST ([arXiv:2511.05468](https://arxiv.org/abs/2511.05468)).
+  * Core developer of `DeepTau`, the convolutional neural network used to separate hadronically decaying tau leptons from jets, electrons, and muons, and the default tau identification algorithm for early Run 3 CMS analyses, published in JINST ([arXiv:2511.05468](https://arxiv.org/abs/2511.05468)).
   * Introduced domain adaptation to reduce the impact of mismodelling in simulation, and achieved a reduction of 40% in the jet misidentification rate compared with previous methods.
   * Measured efficiency and energy scale corrections used by all early Run 3 analyses involving taus.
 
 * **Determining tau lepton spin properties using conditional normalising flows** (2026)
   * Developed a new method to determine tau polarimetric vectors (most likely direction of the tau spin), estimating the undetected neutrino momenta using a conditional normalising flow, submitted to Phys. Rev. D ([arXiv:2608.10961](https://arxiv.org/abs/2608.10961)).
-  * Reconstructed the polarimetric vector in all major tau decay topologies for the first time, demonstrating overall H&rarr;&tau;&tau; CP sensitivity gains of 18% (up to 88% in some final states) on simulated LHC data. Enables further applications including spin-based background suppression and entanglement measurements.
+  * Reconstructed the polarimetric vector in all major tau decay topologies for the first time, demonstrating overall H&rarr;&tau;&tau; CP sensitivity gains of 36% (up to 97% in some final states) on simulated LHC data. Enables further applications including spin-based background suppression and entanglement measurements.
 
 * **Muon Cooling at the J-PARC g-2 Experiment, KEK Tsukuba** (Summer Student, Summer 2023)
   * Designed and built an external cavity diode laser, and simulated beam tolerance to misalignment in Geant4.
@@ -47,8 +47,8 @@ This is a brief summary of my education and research experiences, for further in
 ## Positions of Responsibility
 
 * **Convener of the CMS Tau Algorithms Subgroup (L3)** (2025–Present)
-  * Coordinating a team of &sim;10 people working on tau lepton reconstruction and identification algorithms.
-  * Oversaw the release of several public documents, including a paper ([JINST 20 (2025) P12032](https://iopscience.iop.org/article/10.1088/1748-0221/20/12/P12032)) and three detector performance notes: [CMS-DP-2025-047](https://cds.cern.ch/record/2941434), [CMS-DP-2025-073](https://cds.cern.ch/record/2946445), [CMS-DP-2025-074](https://cds.cern.ch/record/2946446).
+  * Coordinating a team of &sim;10 people working on tau lepton reconstruction and identification algorithms for the current detector and next-generation upgrades.
+  * Oversaw the release of several public documents, including a paper ([JINST 20 (2025) P12032](https://iopscience.iop.org/article/10.1088/1748-0221/20/12/P12032)) and four detector performance notes: [CMS-DP-2025-047](https://cds.cern.ch/record/2941434), [CMS-DP-2025-073](https://cds.cern.ch/record/2946445), [CMS-DP-2025-074](https://cds.cern.ch/record/2946446), [CMS-DP-2026-134](https://cds.cern.ch/record/2971552).
 
 * **Monte Carlo Contact for the CMS Tau Physics Object Group** (2024–Present)
   * Coordinating the production of simulated samples needed for central corrections and new developments.
@@ -61,15 +61,16 @@ This is a brief summary of my education and research experiences, for further in
 
 A full list of publications is available on [INSPIRE-HEP](https://inspirehep.net/authors/2686809).
 
-* [1] CMS Collaboration, "Analysis of the CP structure of the Yukawa coupling between the Higgs boson and tau leptons in proton-proton collisions at &radic;s = 13.6 TeV", [arXiv:2606.03510](https://arxiv.org/abs/2606.03510) [hep-ex], *accepted by JHEP* (2026).
+* [1] CMS Collaboration, "Analysis of the CP structure of the Yukawa coupling between the Higgs boson and tau leptons in proton-proton collisions at &radic;s = 13.6 TeV", [JHEP 10 (2026) 084](https://doi.org/10.1007/JHEP10(2026)084).
 * [2] CMS Collaboration, "Identification of tau leptons using a convolutional neural network with domain adaptation", [JINST 20 (2025) P12032](https://iopscience.iop.org/article/10.1088/1748-0221/20/12/P12032).
 * [3] D. Winterbottom and L. Russell, "TauPolaris: reconstructing tau lepton polarimetric vectors with conditional normalizing flows", [arXiv:2608.10961](https://arxiv.org/abs/2608.10961) [hep-ph], *submitted to Phys. Rev. D* (2026).
 
 ## Conference Talks
 
 * Plenary talk at Rencontres de Moriond QCD, "Higgs CP studies and other Higgs properties at ATLAS and CMS", La Thuile, Italy (2026). Proceedings: [arXiv:2606.05897](https://arxiv.org/abs/2606.05897).
-* Parallel talk at the Institute of Physics HEPP/APP Conference, "Analysis of the CP structure of the Higgs-tau Yukawa coupling at CMS", Edinburgh, UK (2026).
-* Topical plenary talk at Higgs Hunting, "Measurement of the CP structure of the Higgs boson to tau lepton Yukawa coupling at CMS", Paris, France (2026, upcoming).
+* Parallel talk at the Institute of Physics Joint APP/HEPP Conference, "Analysis of the CP structure of the tau lepton Yukawa coupling at the CMS experiment", Edinburgh, UK (2026).
+* Plenary talk at Higgs Hunting, "Measurement of the CP structure of the Higgs boson to tau lepton Yukawa coupling at CMS", Paris, France (2026).
+* Parallel talk at the 23rd Workshop of the LHC Higgs Working Group, "Spin reconstruction in H&rarr;&tau;&tau; with conditional normalising flows", CERN, Switzerland (2026).
 
 ## Awards
 
@@ -80,15 +81,17 @@ A full list of publications is available on [INSPIRE-HEP](https://inspirehep.net
 ## Teaching and Outreach
 
 * **Graduate Teaching Assistant / Assessor**, Imperial College London (2023–Present)
-  * Teaching assistant and assessor for Computational Physics, Mechanics and Relativity, Data Science and Machine Learning, Advanced Particle Physics, and Applied Data Science.
+  * Teaching assistant and assessor for Computational Physics, Mechanics and Relativity, Oscillations and Waves, Data Science and Machine Learning, Advanced Particle Physics, and Applied Data Science.
   * Supervision of undergraduate summer projects.
 
 * **Outreach** (2023–Present)
-  * Introductory Standard Model lecture to 100+ high school students; CMS outreach video at Moriond QCD (40k+ views); public engagement at Imperial's Exhibition Road Festival; and CMS underground tour guide.
+  * Gave an introductory Standard Model lecture and facilitated a hands-on CMS event display session for 100+ high school students at an Imperial particle physics masterclass.
+  * Guided CMS underground visits at CERN and filmed an outreach video at Moriond QCD (40k+ views).
+  * Demonstrated cloud chambers for families at the Great Exhibition Road Festival.
 
 ## Additional Skills and Interests
 
 * **Programming**: Python, C++ (including ROOT), Linux (Bash/Zsh), LaTeX, Git.
-* **HEP/ML Tools**: Machine learning (`PyTorch`, `TensorFlow`), columnar analysis (`coffea`), statistical inference (`Combine`), MC generators (`Madgraph`/`aMC@NLO`, `Powheg`, `Pythia`), `Geant4`, `CMSSW`.
+* **HEP/ML Tools**: Machine learning (`PyTorch`, `TensorFlow`, `XGBoost`), columnar analysis (`coffea`), statistical inference (`Combine`), MC generators (`Madgraph`/`aMC@NLO`, `Powheg`, `Pythia`), `Geant4`, `CMSSW`.
 * **Languages**: Native in English and French, intermediate in Spanish.
 * **Personal Interests**: Cycling, running, football, skiing, piano.

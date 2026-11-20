@@ -10,6 +10,7 @@ excerpt: |
 
   * Computational Physics (BSc Year 3)
   * Mechanics and Relativity (BSc/MSci Year 1)
+  * Oscillations and Waves
   * Data Science and Machine Learning (BSc Year 4)
   * Advanced Particle Physics (MSc/MSci Year 4)
   * Applied Data Science (MRes)
